@@ -1,0 +1,28 @@
+{
+  "name": "swarm-lambda",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run gateway\" \"next dev\"",
+    "build": "next build",
+    "start": "next start",
+    "gateway": "node bin/gateway.js",
+    "worker": "node bin/worker.js"
+  },
+  "dependencies": {
+    "@hyperswarm/rpc": "^3.0.0",
+    "@xyflow/react": "^12.0.0",
+    "concurrently": "^9.0.0",
+    "corestore": "^11.0.0",
+    "cors": "^2.8.5",
+    "dns2": "^2.1.0",
+    "express": "^4.19.2",
+    "geoip-lite": "^1.4.10",
+    "hyperswarm": "^4.0.0",
+    "lambda-local": "^2.2.0",
+    "nanoid": "^5.0.7",
+    "next": "^15.0.0",
+    "path": "^0.12.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

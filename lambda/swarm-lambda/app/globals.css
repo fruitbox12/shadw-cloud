@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+.sidebar {
+  width: 360px;
+  border-right: 1px solid #eee;
+  padding: 12px;
+  overflow: auto;
+}
+
+.canvas {
+  flex: 1;
+  height: 100%;
+}
